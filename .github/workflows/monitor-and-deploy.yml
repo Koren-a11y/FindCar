@@ -1,0 +1,78 @@
+name: Monitor N-VAN and Deploy
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      max_price:
+        description: 'Max price in JPY (optional)'
+        required: false
+        type: string
+      region:
+        description: 'Region keyword (optional)'
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch listings
+        env:
+          MAX_PRICE: ${{ github.event.inputs.max_price }}
+          REGION: ${{ github.event.inputs.region }}
+        run: |
+          ARGS=()
+          if [ -n "$MAX_PRICE" ]; then
+            ARGS+=(--max-price "$MAX_PRICE")
+          fi
+          if [ -n "$REGION" ]; then
+            ARGS+=(--region "$REGION")
+          fi
+          python scripts/fetch_cars.py "${ARGS[@]}"
+      - name: Prepare site content
+        run: |
+          mkdir -p dist/data
+          cp web/index.html dist/index.html
+          cp data/listings.json dist/data/listings.json
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/listings.json
+          if git diff --cached --quiet; then
+            echo "No data changes"
+          else
+            git commit -m "chore: update monitored car listings"
+            git push
+          fi
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: scrape
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
