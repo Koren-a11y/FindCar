@@ -32,7 +32,7 @@
       <input id="maxPrice" type="number" placeholder="例如 1500000" />
     </label>
     <label>
-      地区关键词
+      地区关键词（支持店铺地址）
       <input id="region" type="text" placeholder="例如 東京 / 大阪" />
     </label>
     <div class="actions">
@@ -58,6 +58,10 @@
     return '价格未知';
   }
 
+  function formatShopAddress(item) {
+    return item.shop_address || item.location || '未知';
+  }
+
   function render(items, info = '') {
     statusEl.textContent = `当前 ${items.length} 条结果${info ? `（${info}）` : ''}`;
     cardsEl.innerHTML = items.map(item => `
@@ -65,8 +69,8 @@
         <img src="${item.image_url || ''}" alt="${item.title}">
         <div class="content">
           <h3>${item.title}</h3>
-          <p><strong>${formatPrice(item)}</strong></p>
-          <p class="muted">地点：${item.location || '未知'}</p>
+          <p><strong>价格：${formatPrice(item)}</strong></p>
+          <p class="muted">店铺地址：${formatShopAddress(item)}</p>
           <a href="${item.detail_url}" target="_blank" rel="noreferrer">查看原始链接</a>
         </div>
       </article>
@@ -80,14 +84,15 @@
 
     const filtered = allItems.filter(item => {
       const price = item.price_yen == null ? null : Number(item.price_yen);
+      const shopAddr = (item.shop_address || item.location || '').toLowerCase();
       const passPrice = maxPrice == null || price == null || price <= maxPrice;
-      const passRegion = !region || (item.location || '').toLowerCase().includes(region);
+      const passRegion = !region || shopAddr.includes(region);
       return passPrice && passRegion;
     });
 
     const info = [
       maxPrice != null ? `最高价<=${maxPrice}` : '',
-      region ? `地区包含:${region}` : ''
+      region ? `店铺地址包含:${region}` : ''
     ].filter(Boolean).join('，');
 
     render(filtered, info);
