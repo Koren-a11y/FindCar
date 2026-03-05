@@ -15,7 +15,12 @@ python scripts/fetch_cars.py --max-price 1500000 --region 東京
 python -m http.server 8000
 ```
 
-打开：`http://localhost:8000/web/`
+本地打开（推荐）：`http://localhost:8000/`
+
+> 页面会自动兼容两种数据路径：
+> - `/data/listings.json`（GitHub Pages 部署）
+> - `/web/` 下访问时的 `../data/listings.json`
+
 
 执行后会产出：
 - `data/listings.json`（监控结果数据）

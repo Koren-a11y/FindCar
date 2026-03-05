@@ -51,6 +51,7 @@ class Listing:
     title: str
     price_yen: int | None
     price_label: str
+    shop_address: str
     location: str
     image_url: str
     detail_url: str
@@ -116,6 +117,13 @@ def parse_json_ld(html: str) -> list[Listing]:
             if isinstance(area, dict):
                 area = " ".join(str(v) for v in area.values() if v)
 
+            seller = item.get("seller") if isinstance(item.get("seller"), dict) else {}
+            seller_name = str(seller.get("name", "")).strip()
+            seller_address = seller.get("address") if isinstance(seller.get("address"), dict) else seller.get("address", "")
+            if isinstance(seller_address, dict):
+                seller_address = " ".join(str(v) for v in seller_address.values() if v)
+            seller_address = str(seller_address).strip()
+            shop_address = " ".join(x for x in [seller_name, seller_address] if x).strip()
             image = item.get("image")
             if isinstance(image, list):
                 image_url = urljoin(BASE_URL, str(image[0])) if image else ""
@@ -129,6 +137,7 @@ def parse_json_ld(html: str) -> list[Listing]:
                     title=title,
                     price_yen=price_yen,
                     price_label=price_label,
+                    shop_address=shop_address,
                     location=str(area),
                     image_url=image_url,
                     detail_url=detail_url,
@@ -155,6 +164,7 @@ def parse_fallback_html(html: str) -> list[Listing]:
                 title=title,
                 price_yen=None,
                 price_label="",
+                shop_address="",
                 location="",
                 image_url="",
                 detail_url=detail_url,
@@ -205,7 +215,11 @@ def apply_filters(
 
     if region_keyword:
         region_kw = region_keyword.lower()
-        filtered = [item for item in filtered if region_kw in item.location.lower()]
+        filtered = [
+            item
+            for item in filtered
+            if region_kw in item.location.lower() or region_kw in item.shop_address.lower()
+        ]
 
     return filtered
 
