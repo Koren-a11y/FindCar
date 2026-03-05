@@ -124,7 +124,6 @@ def parse_json_ld(html: str) -> list[Listing]:
                 seller_address = " ".join(str(v) for v in seller_address.values() if v)
             seller_address = str(seller_address).strip()
             shop_address = " ".join(x for x in [seller_name, seller_address] if x).strip()
-
             image = item.get("image")
             if isinstance(image, list):
                 image_url = urljoin(BASE_URL, str(image[0])) if image else ""
