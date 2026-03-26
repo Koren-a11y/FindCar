@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T06:28:49.001582+00:00",
+  "generated_at": "2026-03-26T12:22:21.912294+00:00",
   "source": "https://www.carsensor.net/usedcar/freeword/Honda+N-VAN+%E3%82%BF%E3%83%BC%E3%83%9C+%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88/index.html",
   "query": {
     "model": "Honda N-VAN",
@@ -52,16 +52,6 @@
       "source": "carsensor.net"
     },
     {
-      "title": "N-VAN&nbsp;660 +スタイル ファン ターボ&nbsp;純正8型ナビ バックカメラ 衝突被害軽減 禁煙車 LEDヘッド ビルトインETC 車線逸脱警報 オートライト オートエアコン Bluetooth CD DVD再生 フルセグ",
-      "price_yen": null,
-      "price_label": "",
-      "shop_address": "",
-      "location": "",
-      "image_url": "",
-      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6816896689/index.html",
-      "source": "carsensor.net"
-    },
-    {
       "title": "N-VAN&nbsp;660 ファン ターボ 4WD&nbsp;",
       "price_yen": null,
       "price_label": "",
@@ -69,6 +59,16 @@
       "location": "",
       "image_url": "",
       "detail_url": "https://www.carsensor.net/usedcar/detail/AU6767535306/index.html",
+      "source": "carsensor.net"
+    },
+    {
+      "title": "N-VAN&nbsp;660 +スタイル ファン ターボ&nbsp;純正8型ナビ バックカメラ 衝突被害軽減 禁煙車 LEDヘッド ビルトインETC 車線逸脱警報 オートライト オートエアコン Bluetooth CD DVD再生 フルセグ",
+      "price_yen": null,
+      "price_label": "",
+      "shop_address": "",
+      "location": "",
+      "image_url": "",
+      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6816896689/index.html",
       "source": "carsensor.net"
     },
     {
@@ -172,13 +172,23 @@
       "source": "carsensor.net"
     },
     {
-      "title": "N-VAN&nbsp;660 +スタイル ファン ターボ ホンダセンシング 4WD&nbsp;認定中古車 社外ナビ クルーズコントロール ETC バックカメラ ホンダセンシング 純正アルミホイール イモビライザー スマートキー フロアマット CD/DVD USB MS Bluetooth対応",
+      "title": "N-VAN&nbsp;660 ファン ターボ 4WD&nbsp;H SENSING 新車保証 試乗車 ワンオ-ナ-",
       "price_yen": null,
       "price_label": "",
       "shop_address": "",
       "location": "",
       "image_url": "",
-      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6911504785/index.html",
+      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6913910544/index.html",
+      "source": "carsensor.net"
+    },
+    {
+      "title": "N-VAN&nbsp;660 +スタイル ファン ターボ 4WD&nbsp;純正8インチナビ CD DVD再生 フルセグ Bluetooth接続 バックカメラ ドライブレコーダー ETC 衝突被害軽減ブレーキ クルーズコントロール LEDオートライト 1年保証",
+      "price_yen": null,
+      "price_label": "",
+      "shop_address": "",
+      "location": "",
+      "image_url": "",
+      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6913757486/index.html",
       "source": "carsensor.net"
     },
     {
@@ -299,16 +309,6 @@
       "location": "",
       "image_url": "",
       "detail_url": "https://www.carsensor.net/usedcar/detail/AU6420265130/index.html",
-      "source": "carsensor.net"
-    },
-    {
-      "title": "N-VAN&nbsp;660 ファン ターボ&nbsp;LEDヘッドライト オートA/C 届出済未使用車",
-      "price_yen": null,
-      "price_label": "",
-      "shop_address": "",
-      "location": "",
-      "image_url": "",
-      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6903916431/index.html",
       "source": "carsensor.net"
     }
   ]
