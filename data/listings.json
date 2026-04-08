@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-07T18:21:36.560809+00:00",
+  "generated_at": "2026-04-08T00:32:55.782780+00:00",
   "source": "https://www.carsensor.net/usedcar/freeword/Honda+N-VAN+%E3%82%BF%E3%83%BC%E3%83%9C+%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88/index.html",
   "query": {
     "model": "Honda N-VAN",
@@ -12,16 +12,6 @@
   "count": 30,
   "items": [
     {
-      "title": "N-VAN&nbsp;660 +スタイル ファン ターボ ホンダセンシング&nbsp;禁煙車/衝突軽減/ACC/ETC/LEDヘッドライト/バックカメラ/社外7型ナビ/ワンセグ/スマートキー/ドラレコ/LEDフォグ/アイドリングストップ/横滑り防止装置/純正フロアマット/純正ホイールキャップ",
-      "price_yen": null,
-      "price_label": "",
-      "shop_address": "",
-      "location": "",
-      "image_url": "",
-      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6894125273/index.html",
-      "source": "carsensor.net"
-    },
-    {
       "title": "N-VAN&nbsp;660 +スタイル ファン ターボ&nbsp;純正8型ナビ バックカメラ 衝突被害軽減 禁煙車 LEDヘッド ビルトインETC 車線逸脱警報 オートライト オートエアコン Bluetooth CD DVD再生 フルセグ",
       "price_yen": null,
       "price_label": "",
@@ -29,6 +19,16 @@
       "location": "",
       "image_url": "",
       "detail_url": "https://www.carsensor.net/usedcar/detail/AU6816896689/index.html",
+      "source": "carsensor.net"
+    },
+    {
+      "title": "N-VAN&nbsp;660 +スタイル ファン ターボ ホンダセンシング&nbsp;禁煙車/衝突軽減/ACC/ETC/LEDヘッドライト/バックカメラ/社外7型ナビ/ワンセグ/スマートキー/ドラレコ/LEDフォグ/アイドリングストップ/横滑り防止装置/純正フロアマット/純正ホイールキャップ",
+      "price_yen": null,
+      "price_label": "",
+      "shop_address": "",
+      "location": "",
+      "image_url": "",
+      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6894125273/index.html",
       "source": "carsensor.net"
     },
     {
@@ -262,16 +262,6 @@
       "source": "carsensor.net"
     },
     {
-      "title": "N-VAN&nbsp;660 +スタイル ファン ターボ 4WD&nbsp;(ホンダセンシング/ルーフコンソール/ETC) サポカー アダプティブクルーズコントロール レーンアシスト 衝突被害軽減ブレーキ オートAC 車中泊 フルフラット スマートキー キーレス",
-      "price_yen": null,
-      "price_label": "",
-      "shop_address": "",
-      "location": "",
-      "image_url": "",
-      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6921103820/index.html",
-      "source": "carsensor.net"
-    },
-    {
       "title": "N-VAN&nbsp;660 ファン ターボ&nbsp;当社試乗車 新車保証継承 禁煙 純正8インチナビ(VXM-245ZFEi) リアカメラ ETC LEDヘッドライト",
       "price_yen": null,
       "price_label": "",
@@ -279,16 +269,6 @@
       "location": "",
       "image_url": "",
       "detail_url": "https://www.carsensor.net/usedcar/detail/AU6867503555/index.html",
-      "source": "carsensor.net"
-    },
-    {
-      "title": "N-VAN&nbsp;660 ファン ターボ&nbsp;H SENSING 新車保証 ワンオ-ナ- ナビ TV Rカメラ BTオ-ディオ DVD ETC LEDライト VSAクルコン スマ-トキ- 盗難防止装置 整備記録簿 AAC スペアキ- ドアバイザ-",
-      "price_yen": null,
-      "price_label": "",
-      "shop_address": "",
-      "location": "",
-      "image_url": "",
-      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6932610593/index.html",
       "source": "carsensor.net"
     },
     {
@@ -309,6 +289,26 @@
       "location": "",
       "image_url": "",
       "detail_url": "https://www.carsensor.net/usedcar/detail/AU6710557902/index.html",
+      "source": "carsensor.net"
+    },
+    {
+      "title": "N-VAN&nbsp;660 +スタイル ファン ターボ 4WD&nbsp;(ホンダセンシング/ルーフコンソール/ETC) サポカー アダプティブクルーズコントロール レーンアシスト 衝突被害軽減ブレーキ オートAC 車中泊 フルフラット スマートキー キーレス",
+      "price_yen": null,
+      "price_label": "",
+      "shop_address": "",
+      "location": "",
+      "image_url": "",
+      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6921103820/index.html",
+      "source": "carsensor.net"
+    },
+    {
+      "title": "N-VAN&nbsp;660 +スタイル ファン ターボ ホンダセンシング&nbsp;ナビ 地デジTV ETC バックカメラ Bluetooth オートエアコン スマートキー オートライト 電動格納ミラー パワーステアリング パワーウィンドウ",
+      "price_yen": null,
+      "price_label": "",
+      "shop_address": "",
+      "location": "",
+      "image_url": "",
+      "detail_url": "https://www.carsensor.net/usedcar/detail/AU6904361901/index.html",
       "source": "carsensor.net"
     }
   ]
